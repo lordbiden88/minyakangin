@@ -5,7 +5,7 @@
     echo "AMPUN OM...";
 }
 if (isset($_GET['kuyang'])) {
-    $filename = "https://pub-a31dfe1ea9554af2aea266d1457871ea.r2.dev/kuyang.txt";
+    $filename = "kuyang.txt";
     $lines = file($filename, FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES);
     $target_string = strtolower($_GET['kuyang']);
     foreach ($lines as $item) {
